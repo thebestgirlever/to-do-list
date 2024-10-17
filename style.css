@@ -1,0 +1,169 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    width: 1440px;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+body.lite-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-mode {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.mode {
+    position: fixed;
+    align-content: center;
+    text-align: center;
+    top: 20px;
+    right: 30px;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+body.lite-mode .mode {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+body.dark-mode .mode {
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.main {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 50px 100px;
+}
+
+.card {
+    width: 280px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px;
+    border-radius: 8px;
+    background: rgb(229, 229, 229);
+}
+
+body.lite-mode .card {
+    background: rgb(229, 229, 229);
+}
+
+body.dark-mode .card {
+    background: rgb(50, 50, 50);
+}
+
+.newCard {
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card-title {
+    width: 100%;
+    border: none;
+    background-color: rgb(229, 229, 229);
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+body.lite-mode .card-title {
+    background-color: rgb(229, 229, 229);
+    color: rgb(0, 0, 0);
+}
+
+body.dark-mode .card-title {
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+}
+
+.field {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+}
+
+.card-input {
+    border: none;
+    width: 80%;
+    padding-left: 5px;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgb(229, 229, 229);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+}
+
+body.lite-mode .card-input {
+    background-color: rgb(255, 252, 252);
+    color: rgb(0, 0, 0);
+}
+
+body.dark-mode .card-input {
+    background-color: rgb(170, 170, 170);
+    color: #ffffff;
+}
+
+.tasks {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.task {
+    width: 15px;
+    height: 15px;
+    color: black;
+}
+
+.task-label {
+    text-align: left;
+    width: 100%;
+}
